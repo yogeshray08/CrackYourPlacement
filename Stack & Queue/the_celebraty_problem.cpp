@@ -20,9 +20,7 @@ public:
         }
         for (int i = 0; i < n; i++)
         {
-            if (top == i)
-                continue;
-            else if (top == i || (m[top][i] == 0 && m[i][top] == 1))
+            if (top == i || (m[top][i] == 0 && m[i][top] == 1))
                 continue;
             else
                 return -1;
